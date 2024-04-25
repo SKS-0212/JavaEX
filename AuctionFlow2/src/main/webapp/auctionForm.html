@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Auctions - Enter Bid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box; /* Added to maintain width */
+        }
+        input[type="checkbox"] {
+            margin-top: 15px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Welcome to AP Auctions. Please Enter Bid.</h2>
+    <form action="AuctionServlet" method="post">
+        <label for="itemID">Item ID:</label>
+        <input type="text" id="itemID" name="itemID" required>
+
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" name="itemName" required>
+
+        <label for="yourName">Your Name:</label>
+        <input type="text" id="yourName" name="yourName" required>
+
+        <label for="email">Your Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="amountBid">Amount Bid:</label>
+        <input type="number" id="amountBid" name="amountBid" required>
+
+        <label for="autoIncrement">Auto-increment bid to match other bidders?</label>
+        <input type="checkbox" id="autoIncrement" name="autoIncrement">
+
+        <button type="submit">Submit Bid</button>
+    </form>
+</div>
+</body>
+</html>

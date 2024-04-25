@@ -1,0 +1,16 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+<!--  <servlet>-->
+<!--    <servlet-name>AuctionServlet</servlet-name>-->
+<!--    <servlet-class>com.auction.AuctionServlet</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>AuctionServlet</servlet-name>-->
+<!--    <url-pattern>/AuctionServlet</url-pattern>-->
+<!--  </servlet-mapping>-->
+  <welcome-file-list>
+    <welcome-file>auctionForm.html</welcome-file>
+  </welcome-file-list>
+</web-app>
